@@ -2,6 +2,13 @@
 
 <p>The customized U – Net Architecture is trained for 200 seated Buddha statue images found on Google, and their corresponding binary masks that to segment the validated user input image. A detailed description of model training has stated in the section 04.02 of submitted EC04 Document.</p>
 
+<h2>How to Prepare the files and Train</h2>
+<ul>
+  <li>Download 20240612_Dataset Folder and place it within your Google Drive location : <br>Colab Notebooks/Object Segmentation_UNet/20240612_Dataset/</li>
+  <li>Open the .ipynb file in Google Colab</li>
+  <li>Train with T4 GPU enabled</li>
+</ul>
+
 <h2>Workflow Unit Information</h2>
 
 <table>
