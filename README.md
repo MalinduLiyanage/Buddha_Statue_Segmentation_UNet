@@ -95,6 +95,7 @@
 </table>
 
 <h2>Model Results</h2>
+<img src="https://github.com/MalinduLiyanage/Buddha_Statue_Segmentation_UNet/assets/136006504/266fd38a-bd20-4b05-b900-1883569a6102">
 
 <table>
     <tr>
@@ -116,6 +117,9 @@
         <td>0.2148</td>
     </tr>
 </table>
+
+<h2>Results for Test Cases</h2>
+<img src="https://github.com/MalinduLiyanage/Buddha_Statue_Segmentation_UNet/assets/136006504/8d696797-d872-42d1-9000-1b2567ba304d">
 
 <h2>Evaluation Metrics for Test Cases</h2>
 
