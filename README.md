@@ -94,3 +94,83 @@
     </tr>
 </table>
 
+<h2>Model Results</h2>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Train</th>
+        <th>Validation</th>
+        <th>Test</th>
+    </tr>
+    <tr>
+        <th>Accuracy</th>
+        <td>0.9758</td>
+        <td>0.9795</td>
+        <td>0.9509</td>
+    </tr>
+    <tr>
+        <th>Loss</th>
+        <td>0.0685</td>
+        <td>0.0668</td>
+        <td>0.2148</td>
+    </tr>
+</table>
+
+<h2>Evaluation Metrics for Test Cases</h2>
+
+<table>
+    <tr>
+        <th>Case Number</th>
+        <th>Intersection over Union (IoU)</th>
+        <th>Dice Coefficient</th>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>0.9268</td>
+        <td>0.9620</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>0.8587</td>
+        <td>0.9240</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>0.7444</td>
+        <td>0.8535</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>0.8858</td>
+        <td>0.9395</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>0.6653</td>
+        <td>0.7990</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>0.4923</td>
+        <td>0.6598</td>
+    </tr>
+    <tr>
+        <td>07</td>
+        <td>0.5701</td>
+        <td>0.7262</td>
+    </tr>
+</table>
+
+<h2>Overall Model Evaluation</h2>
+
+<table>
+    <tr>
+        <th>Average Intersection over Union (IoU)</th>
+        <td>0.7283</td>
+    </tr>
+    <tr>
+        <th>Average Dice Coefficient</th>
+        <td>0.8332</td>
+    </tr>
+</table>
