@@ -26,3 +26,64 @@
         <td>Validated and background removed user input image</td>
     </tr>
 </table>
+
+<h2>Summary of the Trained U-Net Model</h2>
+
+<table>
+    <tr>
+        <th>Model Component</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Input Layer</td>
+        <td>The input layer takes in images of size 256×256×1</td>
+    </tr>
+    <tr>
+        <td>Encoder</td>
+        <td>
+            <ul>
+                <li>Consists of 4 blocks of convolutional layers with ReLU activation function and "Same" padding. Kernel size is 3×3.</li>
+                <li>Each block has two convolutional layers followed by a max-pooling layer. Kernel size is 2×2.</li>
+                <li>The number of filters in the convolutional layers increases when reaching the bottleneck. (From 64 to 512)</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Bottleneck</td>
+        <td>Contains two convolutional layers with 1024 filters each.</td>
+    </tr>
+    <tr>
+        <td>Decoder</td>
+        <td>
+            <ul>
+                <li>Consists of 4 blocks of transposed convolutional layers (for up sampling) followed by two convolutional layers</li>
+                <li>The output of the transposed convolutional layers is concatenated with the corresponding feature map from the encoder path.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Output Layer</td>
+        <td>A single convolutional layer with a sigmoid activation function with same spatial dimensions for input layer.</td>
+    </tr>
+    <tr>
+        <td>Optimizer</td>
+        <td>Adam optimizer with learning rate of 1e-4</td>
+    </tr>
+    <tr>
+        <td>Loss Function</td>
+        <td>Binary - Cross entropy</td>
+    </tr>
+    <tr>
+        <td>Trained Epochs</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Early stopping</td>
+        <td>Enabled. The best model is found on the 74th Epoch</td>
+    </tr>
+    <tr>
+        <td>Platform</td>
+        <td>Google Colab, with T4 GPU enabled.</td>
+    </tr>
+</table>
+
